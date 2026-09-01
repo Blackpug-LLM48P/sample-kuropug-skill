@@ -22,6 +22,16 @@ Transform supplied source material into an actionable brief without blurring sou
 
 Use [references/output-format.md](references/output-format.md) when the user requests a reusable brief, implementation plan, or file output. For a short conversational answer, preserve the same distinctions without forcing every heading.
 
+## Output-budget guard
+
+The user-visible answer is the deliverable. Do not exhaust the available completion budget on hidden planning or an exhaustive inventory of the source.
+
+- For a long source, rank findings by relevance and evidence strength before drafting.
+- Prefer a concise, complete brief over an unfinished comprehensive one.
+- Begin the final answer once the evidence boundary and section plan are sufficient; do not keep expanding the plan merely because more source details exist.
+- If the output limit is tight, return the highest-value findings across all required sections and state what was omitted.
+- Never return an empty answer after analysis. If necessary, provide a short partial brief with the inspected scope, strongest finding, main limitation, and next action.
+
 ## Evidence rules
 
 - Never fabricate page numbers, quotations, results, or access to unread material.
@@ -32,5 +42,4 @@ Use [references/output-format.md](references/output-format.md) when the user req
 
 ## Completion
 
-A reusable brief is complete only when it contains traceable findings, a clear boundary between evidence and interpretation, at least one limitation or non-transferable point, and specific next actions.
-
+A reusable brief is complete only when it produces a non-empty user-visible answer containing traceable findings, a clear boundary between evidence and interpretation, at least one limitation or non-transferable point, and specific next actions.
