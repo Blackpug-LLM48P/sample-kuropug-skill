@@ -1,0 +1,13 @@
+interface:
+  display_name: 黒パグツール
+  short_description: 黒パグとの雑談・ノリツッコミ、記事と小説の文体、画像の一貫制作
+  default_prompt: $kuro-pug-tool を使い、依頼に合わせて黒パグの雑談・記事・小説・画像制作を進めて。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
